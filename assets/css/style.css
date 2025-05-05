@@ -8,8 +8,9 @@ body {
   color: #030303;
 }
 
-.container {
-  width: 74%;
+.inner {
+  max-width: 1024px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -197,6 +198,7 @@ company
 .companyInfo td {
   width: 705px;
   font-size: 20px;
+  padding-left: 45px;
   letter-spacing: 1px;
   padding-top: 41px;
 }
@@ -274,7 +276,7 @@ footer
 
 }
 
-.footer .container {
+.footer .inner {
   display: flex;
   padding-top: 33px;
 }
