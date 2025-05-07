@@ -13,6 +13,13 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+@media screen and (max-width:767px) {
+  .inner {
+    max-width: 337px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 
 /********
 header
@@ -44,6 +51,22 @@ header
 .headerNavi_item:last-child {
   margin-right: 0;
 }
+.hamburgerNavi {
+  display: none;
+}
+@media screen and (max-width:767px){
+  .headerLogo {
+    font-size: 20px;
+    line-height: 1.45;
+    letter-spacing: 1px;
+  }
+  .headerNavi {
+    display: none;
+  }
+  .hamburgerNavi {
+    display: none;
+  }
+}
 
 /********
 hero
@@ -64,6 +87,17 @@ hero
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width:767px) {
+  .hero {
+    margin-bottom: 77px;
+  }
+  .heroHeadline {
+    font-size: 39px;
+    line-height: 1.4;
+    left: 40%;
+      transform: translate(-40%, -50%);
+  }
 }
 
 /********
@@ -99,7 +133,32 @@ about
 
   padding: 39px 0 39px 65px;
 }
+@media screen and (max-width:767px) {
+  .about{
+    margin-bottom: 77px;
+  .aboutHeadline {
+    font-size: 36px;
+    line-height: 1.4;
+  }
+  .aboutContent {
+    display: block;
+  }
+  .aboutImage {
+    width: 100%;
+    height: 254px;
+    margin-bottom: 19px;
 
+  }
+  .aboutDiscription {
+    width: 337px;
+    height: 257px;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: .8px;
+    padding: 0;
+  }
+
+}
 /********
 works
 ********/
@@ -120,7 +179,6 @@ works
 }
 
 .worksItem {
-
   width: 319px;
   height: 315px;
   position: relative;
@@ -148,6 +206,27 @@ works
   border: 1px solid #707070;
   border-radius: 50%;
 }
+@media screen and (max-width:767px) {
+  .works {
+    margin-bottom: 99px;
+  }
+  .worksHeadline{
+    font-size: 36px;
+    line-height: 1.4;
+  }
+  .worksList{
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .worksItem {
+    margin-bottom: 79px;
+  }
+  .worksItem:last-child {
+    margin-bottom: 0;
+  }
+
+}
 
 /********
 aside
@@ -158,6 +237,12 @@ aside {
   background: #EAEAEA;
   margin-bottom: 104px;
 }
+@media screen and (max-width:767px) {
+  aside {
+    display: none;
+  }
+}
+
 
 /********
 company
@@ -202,7 +287,43 @@ company
   letter-spacing: 1px;
   padding-top: 41px;
 }
+@media screen and (max-width:767px) {
+  .company {
+    margin-bottom: 90px;
+  }
+  .companyHeadline {
+    font-size: 36px;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .companyInfo {
+    max-width: 337px;
+    width: 100%;
+    margin: 0 auto;
+    border-left: 1px solid #707070;
+  }
+  .companyInfo th {
+    width: 128px;
+    height: 79px;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.9px;
+    padding-top: 32px;
+    padding-left: 32px;
+  }
+  .companyInfo th.companyInfo_sp {
+    padding-left: 19px;
+  }
+  .companyInfo td {
+    width: 208px;
+    height: 79px;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.9px;
+    padding-top: 32px;
+  }
 
+}
 /********
 contact
 ********/
@@ -265,6 +386,34 @@ contact
   border-radius: 47px;
 
 }
+@media screen and (max-width:767px) {
+  .contact {
+    max-width: 337px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 195px;
+  }
+  .contactHeadline {
+    font-size: 36px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  .contact P {
+    font-size: 17px;
+    line-height: 1.7;
+    letter-spacing: 0.85px;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  .contact p > br {
+    display: none;
+  }
+  .contact button {
+    padding: 24px 127px;
+    margin: 0;
+  }
+
+}
 
 /********
 footer
@@ -273,17 +422,11 @@ footer
   width: 100%;
   height: 169px;
   background: #EAEAEA;
-
 }
-
 .footer .inner {
   display: flex;
   padding-top: 33px;
 }
-
-/* .footerInfo {
-
-} */
 .footerHeadline {
   font-size: 26px;
   font-weight: bold;
@@ -292,7 +435,6 @@ footer
   letter-spacing: 1.3px;
   margin-bottom: 15px;
 }
-
 .footerNavi_list {
   display: flex;
 }
@@ -308,11 +450,45 @@ footer
 .footerNavi_item:last-child {
   margin-right: 0;
 }
-
 .copyright {
   font-size: 15px;
   color: #000;
   line-height: 1.4;
   letter-spacing: .75px;
   margin-left: auto;
+}
+
+@media screen and (max-width:767px) {
+  .footer {
+    height: auto;
+  }
+  .footer .inner {
+    display: block;
+  }
+  .footerHeadline {
+    font-size: 26px;
+    line-height: 1.4;
+    letter-spacing: 1.3px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .footerNavi_list {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .footerNavi_item {
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.9px;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  .footerNavi_item:last-child {
+    margin-bottom: 0;
+  }
+  .copyright {
+    text-align: center;
+    padding-bottom: 13px;
+  }
+}
 }
