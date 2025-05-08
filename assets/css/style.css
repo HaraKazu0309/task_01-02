@@ -6,6 +6,7 @@
 body {
   font-family: "Noto Sans JP", sans-serif;
   color: #030303;
+
 }
 
 .inner {
@@ -192,6 +193,7 @@ about
 ********/
 .about {
   margin-bottom: 123px;
+  padding: 0 10px;
 }
 
 .aboutHeadline {
@@ -251,6 +253,7 @@ works
 ********/
 .works {
   margin-bottom: 190px;
+  padding: 0 10px;
 }
 
 .worksHeadline {
@@ -263,6 +266,8 @@ works
 .worksList {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px 0;
 }
 
 .worksItem {
@@ -335,6 +340,7 @@ company
 ********/
 .company {
   margin-bottom: 90px;
+  padding: 0 10px;
 }
 
 .companyHeadline {
@@ -434,6 +440,11 @@ contact
   text-align: center;
   margin-bottom: 111px;
 }
+.contactForm {
+  max-width: 658px;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .contactForm_list {
   margin-bottom: 56px;
@@ -508,6 +519,7 @@ footer
   width: 100%;
   height: 169px;
   background: #EAEAEA;
+  padding: 0 10px;
 }
 .footer .inner {
   display: flex;
